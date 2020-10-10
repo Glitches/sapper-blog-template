@@ -19,7 +19,7 @@
 </style>
 
 <div>
-  <img src="profile-pic.png" alt="Maxi Ferreira" />
+  <img src="profile-pic.jpg" alt="Andrea Ceccarelli" />
   <p>
     Hi, I'm
     <strong>Andrea</strong>. I'm a web developer from Lucca, Italy. You can

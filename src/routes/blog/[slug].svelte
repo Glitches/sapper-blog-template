@@ -1,5 +1,5 @@
 <script context="module">
-  export async function preload({ params, query }) {
+  export async function preload({ params }) {
     // the `slug` parameter is available because
     // this file is called [slug].html
     const res = await this.fetch(`blog/${params.slug}.json`);
@@ -14,8 +14,8 @@
 </script>
 
 <script>
-  import Bio from '../../components/Bio.svelte'
-  export let post
+  import Bio from '../../components/Bio.svelte';
+  export let post;
 </script>
 
 <style>
@@ -28,7 +28,7 @@
   }
 
   header p {
-    color: #AAA;
+    color: #aaa;
     text-transform: uppercase;
     font-family: Rubik, sans-serif;
     font-weight: 600;
