@@ -27,6 +27,10 @@
     <a
       href="https://www.twitter.com/NethanKossovsky"
       target="_blank">Twitter</a>, see some of my work on
-    <a href="https://www.github.com/Glitches" target="_blank">GitHub</a>.
+    <a href="https://www.github.com/Glitches" target="_blank">GitHub</a>, or
+    follow me on
+    <a
+      href="https://www.linkedin.com/andrea-ceccarelli-glitches"
+      target="_blank">LinkedIn</a>.
   </p>
 </div>

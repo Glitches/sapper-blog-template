@@ -1,11 +1,27 @@
 <script>
   import Header from '../components/Header.svelte';
+  import * as D from 'date-fns';
 
+  const hours = D.getHours(new Date());
+
+  export const isNight = hours <= 8 || hours >= 17;
   export let segment;
 </script>
 
 <style>
+  .theme-light {
+    --main-bg-color: #ffffff;
+    --text-color: #36393b;
+  }
+
+  .theme-dark {
+    --main-bg-color: #2b3542;
+    --text-color: #fdfdfd;
+  }
+
   .layout {
+    background-color: var(--main-bg-color);
+    color: var(--text-color);
     display: flex;
     flex-direction: column;
     min-height: 100%;
@@ -17,7 +33,6 @@
     position: relative;
     margin: 0 auto;
     max-width: 1400px;
-    background-color: white;
     padding: 1em 2em;
     box-sizing: border-box;
     width: 100%;
@@ -37,7 +52,7 @@
   }
 </style>
 
-<div class="layout">
+<div class={`layout ${isNight ? 'theme-dark' : 'theme-light'}`}>
   <Header {segment} />
 
   <main>
