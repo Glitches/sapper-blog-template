@@ -1,8 +1,8 @@
 <script>
   import Header from '../components/Header.svelte';
-  import * as D from 'date-fns';
+  import { getHours } from 'date-fns';
 
-  const hours = D.getHours(new Date());
+  const hours = getHours(new Date());
 
   export const isNight = hours <= 8 || hours >= 17;
   export let segment;

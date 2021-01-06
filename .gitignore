@@ -1,5 +1,8 @@
 .DS_Store
-node_modules
+/node_modules/
+.vscode
+!.vscode/extensions.json
+/src/node_modules/@sapper/
 yarn-error.log
 /cypress/screenshots/
 /__sapper__/

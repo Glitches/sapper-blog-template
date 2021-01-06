@@ -1,0 +1,17 @@
+{
+    "name": "Personal page develop",
+    "dockerComposeFile": [
+        "../docker-compose.yaml",
+        "../docker-compose.override.yaml"
+    ],
+    "service": "personal_page",
+    "workspaceFolder": "/workspace",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "remoteUser": "node",
+    "extensions": [
+        "svelte.svelte-vscode"
+    ],
+    "shutdownAction": "stopCompose"
+}

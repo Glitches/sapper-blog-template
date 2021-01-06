@@ -14,7 +14,7 @@
 </script>
 
 <script>
-  import Bio from '../../components/Bio.svelte';
+  import Bio from "../bio.svelte";
   export let post;
 </script>
 
