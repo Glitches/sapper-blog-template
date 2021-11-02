@@ -11,11 +11,11 @@
     "validate": "svelte-check --ignore src/node_modules/@sapper"
   },
   "dependencies": {
-    "axios": "^0.24.0",
     "compression": "^1.7.1",
     "date-fns": "^2.16.1",
     "gray-matter": "^4.0.2",
     "marked": "^1.2.7",
+    "node-fetch": "^2.6.6",
     "polka": "next",
     "prismjs": "^1.22.0",
     "reading-time": "^1.2.1",

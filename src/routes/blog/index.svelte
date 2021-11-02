@@ -1,8 +1,11 @@
 <script context="module">
-import  axios from "axios"
+import  fetch from "node-fetch"
 export const preload = async () => {
-    const res = await axios.get(`blog.json`)
-    const posts = await res.data
+    if (!globalThis.fetch) {
+        globalThis.fetch = fetch;
+    }
+    const res = await fetch(`blog.json`)
+    const posts = await res.json()
     return { posts };
   };
 </script>
