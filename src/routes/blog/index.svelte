@@ -1,10 +1,9 @@
 <script context="module">
-  export const preload = () => {
-    return fetch(`blog.json`)
-      .then((r) => r.json())
-      .then((posts) => {
-        return { posts };
-      });
+import  axios from "axios"
+export const preload = async () => {
+    const res = await axios.get(`blog.json`)
+    const posts = await res.data
+    return { posts };
   };
 </script>
 

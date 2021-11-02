@@ -1,6 +1,6 @@
-version: '3.3'
+version: "3.3"
 services:
   personal_page:
-    image: node
+    image: node:14-slim
     tty: true
     container_name: personal_page
