@@ -7,7 +7,6 @@
     "service": "personal_page",
     "workspaceFolder": "/workspace",
     "settings": {
-        "terminal.integrated.shell.linux": "/bin/bash"
     },
     "remoteUser": "node",
     "extensions": [

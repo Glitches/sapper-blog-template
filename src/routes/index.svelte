@@ -1,3 +1,22 @@
+<svelte:head>
+  <title>Andrea Ceccarelli</title>
+</svelte:head>
+
+<div class="home-container">
+  <div class="home-copy">
+    <h1>Welcome to my personal Blog</h1>
+    <p>Here you'll find some thoughts and idea about web development.</p>
+  </div>
+
+  <figure>
+    <img alt="Person typing on laptop" src="undraw-illustration.svg" />
+    <figcaption>
+      Illustration thanks to
+      <a href="https://undraw.co" target="_blank">Undraw</a>
+    </figcaption>
+  </figure>
+</div>
+
 <style>
   .home-container {
     align-items: center;
@@ -59,22 +78,3 @@
     }
   }
 </style>
-
-<svelte:head>
-  <title>Andrea Ceccarelli</title>
-</svelte:head>
-
-<div class="home-container">
-  <div class="home-copy">
-    <h1>Welcome to my personal Blog</h1>
-    <p>Here you'll find some thoughts and idea about web development.</p>
-  </div>
-
-  <figure>
-    <img alt="Person typing on laptop" src="undraw-illustration.svg" />
-    <figcaption>
-      Illustration thanks to
-      <a href="https://undraw.co" target="_blank">Undraw</a>
-    </figcaption>
-  </figure>
-</div>

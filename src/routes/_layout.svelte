@@ -1,12 +1,32 @@
 <script>
-  import Header from '../components/Header.svelte';
-  import { getHours } from 'date-fns';
+  import Header from "../components/Header.svelte";
+  import { getHours } from "date-fns";
 
   const hours = getHours(new Date());
 
   export const isNight = hours <= 8 || hours >= 17;
   export let segment;
 </script>
+
+<div class={`layout ${isNight ? "theme-dark" : "theme-light"}`}>
+  <Header {segment} />
+
+  <main>
+    <slot />
+  </main>
+
+  <footer>
+    <span>
+      &copy;
+      {new Date().getFullYear()}
+      Andrea Ceccarelli. Powered by
+      <a href="https://sapper.svelte.dev" target="_blank">Sapper</a>. Template
+      by
+      <a href="https://www.twitter.com/Charca" target="_blank">Maxi Ferreira</a
+      >.
+    </span>
+  </footer>
+</div>
 
 <style>
   .theme-light {
@@ -51,22 +71,3 @@
     width: 100%;
   }
 </style>
-
-<div class={`layout ${isNight ? 'theme-dark' : 'theme-light'}`}>
-  <Header {segment} />
-
-  <main>
-    <slot />
-  </main>
-
-  <footer>
-    <span>
-      &copy;
-      {new Date().getFullYear()}
-      Andrea Ceccarelli. Powered by
-      <a href="https://sapper.svelte.dev" target="_blank">Sapper</a>. Template
-      by
-      <a href="https://www.twitter.com/Charca" target="_blank">Maxi Ferreira</a>.
-    </span>
-  </footer>
-</div>

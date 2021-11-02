@@ -14,9 +14,26 @@
 </script>
 
 <script>
-  import Bio from "../bio.svelte";
+  import Bio from ".././../components/Bio.svelte";
   export let post;
 </script>
+
+<svelte:head>
+  <title>{post.title}</title>
+</svelte:head>
+
+<header>
+  <p>{post.printDate} ~ {post.printReadingTime}</p>
+  <h1>{post.title}</h1>
+  <hr />
+</header>
+<div class="container">
+  <article class="content">
+    {@html post.html}
+  </article>
+  <hr />
+  <Bio />
+</div>
 
 <style>
   header {
@@ -39,20 +56,3 @@
     width: 30%;
   }
 </style>
-
-<svelte:head>
-  <title>{post.title}</title>
-</svelte:head>
-
-<header>
-  <p>{post.printDate} ~ {post.printReadingTime}</p>
-  <h1>{post.title}</h1>
-  <hr />
-</header>
-<div class="container">
-  <article class="content">
-    {@html post.html}
-  </article>
-  <hr />
-  <Bio />
-</div>
