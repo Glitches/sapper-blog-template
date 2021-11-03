@@ -1,12 +1,17 @@
 <script context="module">
 import  fetch from "node-fetch"
+import Api from "@beyonk/sapper-httpclient";
+
+const { PORT } = process.env;
+Api.configure({ baseUrl: "https://localhost:" + PORT });
 export const preload = async () => {
-    if (!globalThis.fetch) {
-        globalThis.fetch = fetch;
-    }
-    const res = await fetch(`blog.json`)
-    const posts = await res.json()
-    return { posts };
+
+const api = Api.create()
+const json = await api
+  .context({ fetch }) // pass node fetch in here.
+  .endpoint('blog.json')
+  .get()
+    return { posts: json };
   };
 </script>
 

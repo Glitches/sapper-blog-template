@@ -823,6 +823,11 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
+"@beyonk/sapper-httpclient@^10.0.1":
+  version "10.0.1"
+  resolved "https://registry.yarnpkg.com/@beyonk/sapper-httpclient/-/sapper-httpclient-10.0.1.tgz#b388dd772727ad13258024cd0efc55e55fa315ca"
+  integrity sha512-WqrGvFNIBBa2nW82x+sipW4ODMA4cfy17fz3/w/f9dhUjGRQBGYQMWIJxFMtXgm/flFoVwf5y9tZ+47vuto0xg==
+
 "@polka/url@^1.0.0-next.11", "@polka/url@^1.0.0-next.9":
   version "1.0.0-next.11"
   resolved "https://registry.yarnpkg.com/@polka/url/-/url-1.0.0-next.11.tgz#aeb16f50649a91af79dbe36574b66d0f9e4d9f71"
