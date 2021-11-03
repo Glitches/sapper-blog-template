@@ -3,8 +3,6 @@ title: My dotfiles
 date: "2021-11-02T08:38:00.000Z"
 ---
 
-### My dotfiles
-
 It's been a life since I don't write a blog post, so for a fresh start I want to
 share my `dotfiles` repo:
 [Dotfiles](https://github.com/glitches/dotfiles)

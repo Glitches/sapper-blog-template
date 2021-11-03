@@ -3,12 +3,11 @@ import polka from "polka";
 import compression from "compression";
 import * as sapper from "@sapper/server";
 // src/client.js && src/server.js
-import Api from '@beyonk/sapper-httpclient'
-
+import Api from "@beyonk/sapper-httpclient";
 
 const { PORT, NODE_ENV } = process.env;
 const dev = NODE_ENV === "development";
-Api.configure({ baseUrl: 'http://localhost:' + PORT })
+Api.configure({ baseUrl: "http://localhost:" + PORT });
 
 polka() // You can also use Express
   .use(
