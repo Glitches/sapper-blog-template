@@ -1,5 +1,5 @@
 <script>
-  export let title = "";
+  export const title = "";
 
   const links = [
     { href: "/", text: "Home" },
