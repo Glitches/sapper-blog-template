@@ -45,6 +45,7 @@
     "vitest": "^3.0.0"
   },
   "dependencies": {
-    "melt": "^0.11.0"
+    "melt": "^0.11.0",
+    "svelte-exmarkdown": "^5.0.0"
   }
 }
