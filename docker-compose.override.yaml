@@ -1,8 +1,0 @@
-services:
-  personal_page:
-    volumes:
-      - .:/workspace:cached
-    working_dir: /workspace
-    command: ["npm", "install"]
-    ports:
-      - 127.0.0.1:5173:5173

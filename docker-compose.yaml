@@ -3,3 +3,8 @@ services:
     image: node:22-slim
     tty: true
     container_name: personal_page
+    volumes:
+      - .:/workspace:cached
+    working_dir: /workspace
+    ports:
+      - 127.0.0.1:5173:5173

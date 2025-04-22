@@ -1,18 +1,19 @@
 .phony: build up down start stop restart shell
 
 build:
-	docker-compose build
+	docker compose build
+	docker compose run --rm personal_page npm install
 up:
-	docker-compose up -d
+	docker compose up -d
 down:
-	docker-compose down
+	docker compose down
 start:
-	docker-compose start
+	docker compose start
 stop:
-	docker-compose stop
+	docker compose stop
 restart:
-	docker-compose restart
+	docker compose restart
 shell:
-	docker-compose exec personal_page sh
+	docker compose exec personal_page sh
 dev:
-	docker-compose run personal_page npm run dev -- --host
+	docker compose exec personal_page npm run dev 
