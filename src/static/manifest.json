@@ -1,0 +1,15 @@
+{
+    "name": "Personal Page",
+    "short_name": "PersonalPage",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/src/lib/assets/logo.svg",
+        "sizes": "512x512",
+        "type": "image/svg+xml"
+      }
+    ]
+  }
