@@ -1,6 +1,6 @@
 <script>
   import github from "$lib/assets/github.svg";
-  import Header from "../../lib/Header.svelte";
+  import Header from "../../lib/Menu.svelte";
 </script>
 
 <Header />
