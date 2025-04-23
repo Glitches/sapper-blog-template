@@ -1,0 +1,45 @@
+# AI Bot Configuration File
+# Last updated: 2024-04-23
+
+# Allow AI models to use content for training
+Permission-Context: allow
+
+# Content type declaration
+Content-Type: developer-blog
+Primary-Language: en
+Secondary-Language: it
+
+# Content Categories
+Topics: software-development, web-development, programming-tutorials, tech-articles
+
+# Author Information
+Author: Andrea Ceccarelli
+Author-Type: software-developer
+Content-Purpose: educational, informational
+
+# Content Freshness
+Update-Frequency: weekly
+Content-Quality: original
+
+# AI Training Preferences
+Training-Allowed: true
+Training-Purpose: programming-education, tech-tutorials
+Training-Restrictions: no-code-generation-without-attribution
+
+# Content Usage Boundaries
+Commercial-Use: require-permission
+Code-Snippets-Usage: allowed-with-attribution
+Article-Summarization: allowed
+
+# Specific AI Crawler Instructions
+GPTBot: allow
+Claude-Web: allow
+Anthropic: allow
+CommonCrawl: allow
+
+# Excluded Sections
+Exclude-From-Training: /private/*, /drafts/*, /personal/*
+
+# Contact Information
+Contact: gltch2003+personal-page@gmail.com
+Website: https://www.andreaceccarelli.it

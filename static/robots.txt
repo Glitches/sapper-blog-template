@@ -1,0 +1,18 @@
+User-agent: *
+Allow: /
+Allow: /about
+Allow: /assets/blog/
+
+# Prevent indexing of potential development/build artifacts
+Disallow: /build/
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /.svelte-kit/
+Disallow: /coverage/
+Disallow: /test/
+
+# Add your sitemap location
+Sitemap: https://www.andreaceccarelli.it/sitemap.xml
+
+# Crawl-delay for all bots (optional, in seconds)
+Crawl-delay: 10
