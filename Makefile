@@ -14,6 +14,6 @@ stop:
 restart:
 	docker compose restart
 shell:
-	docker compose exec personal_page sh
+	docker compose exec personal_page bash
 dev:
 	docker compose exec personal_page npm run dev 
