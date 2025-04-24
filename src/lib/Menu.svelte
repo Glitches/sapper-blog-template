@@ -11,15 +11,18 @@
   const handleClick = () => isOpen = !isOpen;
 </script>
 
-<div 
-  class="menu-container"
-  on:click={handleClick}
->
-  <div class="hamburger" class:open={isOpen}>
+<div class="menu-container">
+  <button 
+    class="hamburger" 
+    class:open={isOpen} 
+    on:click={handleClick} 
+    aria-expanded={isOpen} 
+    aria-label="Toggle menu"
+  >
     <span></span>
     <span></span>
     <span></span>
-  </div>
+  </button>
 
   {#if isOpen}
     <nav class="menu-items">
